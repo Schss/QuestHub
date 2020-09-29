@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beautiful_orange_color"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            app:srcCompat="@drawable/qhlog" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:outlineAmbientShadowColor="#4E1313"
+        android:text="Войдите или зарегистрируйтесь"
+        android:textColor="#FE6500"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_bottom"
+        android:layout_margin="24dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D9555629"
+            android:outlineAmbientShadowColor="#BD6F6F"
+            android:outlineSpotShadowColor="#988080"
+            android:shadowColor="#FF0B0B"
+            android:text="Войти"
+            android:textColor="#FE6500"
+            android:textColorHighlight="#FFDBDB" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D9555629"
+            android:outlineAmbientShadowColor="#BD6F6F"
+            android:outlineSpotShadowColor="#988080"
+            android:shadowColor="#FF0B0B"
+            android:text="Зарегистрироваться"
+            android:textColor="#FE6500"
+            android:textColorHighlight="#FFDBDB" />
+
+    </LinearLayout>
+
+</RelativeLayout>
